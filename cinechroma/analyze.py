@@ -6,4 +6,6 @@ See README.md for:
 - data model
 """
 
-# TODO: Implement color analysis core (Lab/OKLab)
+
+def run_analysis(args):
+	print(f"[analyze] Would analyze {args.video} with k={getattr(args, 'k', 5)}")

@@ -6,4 +6,6 @@ See README.md for:
 - data model
 """
 
-# TODO: Implement visualization (color strips, etc.)
+
+def render_color_strip(input_path):
+	print(f"[render] Would render color strip from {input_path}")

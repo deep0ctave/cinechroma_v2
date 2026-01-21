@@ -6,4 +6,9 @@ See README.md for:
 - data model
 """
 
-# TODO: Implement frame extraction using ffmpeg
+
+def extract_every_n(video_path, output_dir, n):
+	print(f"[extract] Would extract every {n}th frame from {video_path} to {output_dir}")
+
+def extract_keyframes(video_path, output_dir):
+	print(f"[extract] Would extract keyframes from {video_path} to {output_dir}")

@@ -6,4 +6,6 @@ See README.md for:
 - data model
 """
 
-# TODO: Implement shared utilities (e.g., ffmpeg check)
+
+def check_ffmpeg():
+	print("[utils] Dummy ffmpeg check (always passes)")

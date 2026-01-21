@@ -7,3 +7,12 @@ See README.md for:
 """
 
 # TODO: Implement terminal UI using Rich and pyfiglet
+
+class DummyConsole:
+    def print(self, msg):
+        print(msg)
+
+console = DummyConsole()
+
+def show_banner():
+    print("[banner] cinechroma CLI")
