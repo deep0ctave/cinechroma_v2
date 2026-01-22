@@ -209,7 +209,7 @@ cinechroma clean --frames-dir my_frames/ --out-dir results/
 
 A horizontal timeline where each vertical line represents the dominant color of a frame.
 
-![Color Strip Example](output/strip.png)
+![Color Strip Example](strip.png)
 
 Perfect for seeing color shifts throughout a film.
 
@@ -217,7 +217,7 @@ Perfect for seeing color shifts throughout a film.
 
 Four horizontal bars showing dominant colors for different luminance ranges:
 
-![Palette Bars Example](output/palette.png)
+![Palette Bars Example](palette.png)
 
 **Palette Categories:**
 - **Light** — Colors with L > 70
