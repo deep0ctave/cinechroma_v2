@@ -1,24 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "cinechroma"
 version = "0.1.0"
 description = "Film color analysis from the command line"
-authors = ["Your Name <your.email@example.com>"]
-requires-python = ">=3.10"
 readme = "README.md"
+requires-python = ">=3.10"
+
+authors = [
+  { name = "Avinash", email = "avinash@example.com" }
+]
+
+dependencies = [
+  "numpy",
+  "opencv-python",
+  "scikit-learn",
+  "scikit-image",
+  "pillow",
+  "rich",
+  "pyfiglet",
+]
 
 [project.scripts]
 cinechroma = "cinechroma.cli:main"
 
 [tool.setuptools.packages.find]
-where = ["cinechroma"]
-
-[project.dependencies]
-opencv-python = "*"
-numpy = "*"
-scikit-learn = "*"
-scikit-image = "*"
-Pillow = "*"
-tqdm = "*"
-argparse = "*"
-rich = "*"
-pyfiglet = "*"
+where = ["."]
+include = ["cinechroma"]
