@@ -28,10 +28,50 @@
 - Python 3.8 or higher
 - FFmpeg and FFprobe installed and available in PATH
 
-### Install from source
+### Installing FFmpeg
+
+#### Windows
+
+1. **Download FFmpeg:**
+   - Visit [ffmpeg.org/download.html](https://ffmpeg.org/download.html)
+   - Click on the Windows icon
+   - Download the latest release build (e.g., from gyan.dev or BtbN)
+   - Extract the ZIP file to a location like `C:\ffmpeg`
+
+2. **Add to PATH:**
+   - Open **System Properties** → **Environment Variables**
+   - Under **System variables**, find and edit `Path`
+   - Click **New** and add the path to the `bin` folder (e.g., `C:\ffmpeg\bin`)
+   - Click **OK** to save
+
+3. **Verify Installation:**
+   ```cmd
+   ffmpeg -version
+   ffprobe -version
+   ```
+
+#### Ubuntu/Linux
+
+1. **Install FFmpeg:**
+   ```bash
+   sudo apt update
+   sudo apt install ffmpeg
+   ```
+
+2. **Verify Installation:**
+   ```bash
+   ffmpeg -version
+   ffprobe -version
+   ```
+
+Both commands should display version information if installed correctly.
+
+---
+
+### Install cinechroma from source
 
 ```bash
-git clone https://github.com/yourusername/cinechroma_v2.git
+git clone https://github.com/deep0ctave/cinechroma_v2.git
 cd cinechroma_v2
 pip install -e .
 ```
